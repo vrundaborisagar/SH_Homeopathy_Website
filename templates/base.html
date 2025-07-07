@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SH Homeopathy</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Additional Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='logo.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="flex flex-col min-h-screen">
+
+<!-- ✅ Navbar -->
+<nav class="bg-yellow-500 shadow p-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    
+    <!-- Logo and Brand -->
+    <div class="flex items-center space-x-4">
+      <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo" class="h-12 w-auto">
+      <a href="/" class="text-black font-bold text-xl">SH Homeopathy </a>
+    </div>
+
+    <!-- Nav Links -->
+    <div class="flex items-center space-x-6">
+      <a href="/about" class="text-black font-bold hover:underline">About</a>
+      <a href="/treatments" class="text-black font-bold hover:underline">Treatments</a>
+      <a href="/cure_case" class="text-black font-bold hover:underline">Cure Case</a>
+      <a href="/contact" class="text-black font-bold hover:underline">Contact Us</a>
+      <a href="/order" class="bg-black text-white px-3 py-1 rounded hover:bg-gray-800 font-bold">Order Now</a>
+      <a href="/appointment" class="bg-black text-white px-3 py-1 rounded hover:bg-gray-800 font-bold">Book Appointment</a>
+    </div>
+  </div>
+</nav>
+<!-- ✅ Main Content -->
+<main class="flex-grow">
+  <div class="max-w-7xl mx-auto p-8 text-center">
+    {% block content %}{% endblock %}
+  </div>
+</main>
+
+<!-- ✅ Footer -->
+<footer class="bg-black text-white p-8 mt-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- Column 1 -->
+<div>
+  <h4 class="text-xl font-bold mb-2">SH Homeopathy</h4>
+  <p class="text-sm text-gray-400 mb-2">Committed to holistic care and long-term relief.</p>
+
+  <!-- Social Media Icons -->
+  <div class="flex space-x-4 mt-2 text-xl">
+    <a href="https://www.facebook.com/share/19E7jLRcKr/" target="_blank" class="text-gray-400 hover:text-blue-500">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/dr.borisagar_sh_homeopathy?igsh=MW44cnd2cTNlcHF5YQ==" target="_blank" class="text-gray-400 hover:text-pink-500">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://youtube.com/@shhomeopathy?si=tnvJiLntQdjp242d" target="_blank" class="text-gray-400 hover:text-red-500">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+</div>
+
+    <!-- Column 2 -->
+    <div>
+  <h4 class="text-xl font-semibold mb-4">Location</h4>
+  <ul class="text-sm text-gray-400 space-y-2">
+    <li>
+      <a href="https://maps.app.goo.gl/dtFTFuWPTHZ2r3CS7" 
+         target="_blank" 
+         class="hover:text-blue-500 underline">
+        Shreeya Spine & Pain Management Center, Kumarshala Main Road,<br>Khambha-Amreli, Gujarat
+      </a>
+    </li>
+    <li>+91-9427429035</li>
+    <li>+91-9426666659</li>
+    <li>dr.borisagars.sh.homeopathy@gmail.com</li>
+  </ul>
+</div>
+
+    <!-- Column 3 -->
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+      <ul class="text-sm text-gray-400 space-y-2">
+        <li><a href="/about" class="hover:text-yellow-500">About Us</a></li>
+        <li><a href="/contact" class="hover:text-yellow-500">Contact Us</a></li>
+        <li><a href="/appointment" class="hover:text-yellow-500">Appointment</a></li>
+        <li><a href="/order" class="hover:text-yellow-500">Order Kit</a></li>
+      </ul>
+    </div>
+    <!-- Column 4 -->
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Treatments</h4>
+      <ul class="text-sm text-gray-400 space-y-2">
+        <li><a href="/treatments/sciatica" class="hover:text-yellow-500">Sciatica</a></li>
+        <li><a href="/treatments/backache" class="hover:text-yellow-500">Backache</a></li>
+        <li><a href="/treatments/cervical_spondylosis" class="hover:text-yellow-500">Cervical Spondylosis</a></li>
+        <li><a href="/treatments/cervico_brachial_neuralgia" class="hover:text-yellow-500">Cervico Brachial nuralgia</a></li>
+        <li><a href="/treatments/frozen_shoulder" class="hover:text-yellow-500">Frozen Shoulder</a></li>
+        <li><a href="/treatments/tennis_elbow" class="hover:text-yellow-500">Tennis Elbow</a></li>
+        <li><a href="/treatments/carpal_tunnel" class="hover:text-yellow-500">Carpal Tunnel Syndrome</a></li>
+        <li><a href="/treatments/avn" class="hover:text-yellow-500">AVN</a></li>
+        <li><a href="/treatments/oa_knee" class="hover:text-yellow-500">O.A. Knee</a></li>
+        <li><a href="/treatments/pad" class="hover:text-yellow-500">Peripheral Artery Disease (PAD)</a></li>
+        <li><a href="/treatments/vericose_vein" class="hover:text-yellow-500">Varicose Veins</a></li>
+        <li><a href="/treatments/sports_injuries" class="hover:text-yellow-500">Sports Injuries</a></li>
+        <li><a href="/treatments/spinal_cord_injury" class="hover:text-yellow-500">Spinal Cord Injury</a></li>
+        <li><a href="/treatments/tendinitis" class="hover:text-yellow-500">Tendinitis</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mt-8 border-t border-gray-700 pt-4 text-center text-xs text-gray-500">
+    &copy; 2025 SH Homeopathy. All rights reserved.
+  </div>
+</footer>
+
+
+</body>
+</html>
