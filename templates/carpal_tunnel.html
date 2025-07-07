@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="bg-white p-8 max-w-5xl mx-auto">
+
+  <!-- Title -->
+  <h1 class="text-4xl font-bold mb-6 text-center">Carpal Tunnel Syndrome</h1>
+
+  <!-- Intro Image and Text -->
+  <div class="mb-8 text-center">
+    <img src="{{ url_for('static', filename='images/carpal_tunnel_1.png') }}"
+         alt="Carpal Tunnel Syndrome"
+         class="w-full max-w-xl mx-auto rounded shadow mb-4">
+    <p class="text-lg text-gray-800 leading-relaxed max-w-2xl mx-auto">
+      Carpal Tunnel Syndrome is a painful condition caused by pressure on the median nerve as it passes through the narrow carpal tunnel in the wrist. It often leads to numbness, tingling, and weakness in the hand and fingers, especially at night or after repetitive movements. Early care and proper management can help reduce symptoms and prevent long-term damage.
+    </p>
+  </div>
+
+  <!-- Symptoms -->
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Numbness or tingling in the thumb, index, and middle fingers</li>
+    <li>Burning sensation or pain that may radiate up the arm</li>
+    <li>Weak grip and difficulty holding small objects</li>
+    <li>Symptoms often worsen at night or with repetitive tasks</li>
+    <li>Feeling of swelling in fingers without visible swelling</li>
+  </ul>
+
+  <!-- Info Image and Text -->
+  <div class="mb-8 text-center">
+    <img src="{{ url_for('static', filename='images/carpal_tunnel_2.jpg') }}"
+         alt="Wrist Anatomy"
+         class="w-full max-w-xl mx-auto rounded shadow mb-4">
+    <p class="text-lg text-gray-800 leading-relaxed max-w-2xl mx-auto">
+      Carpal Tunnel Syndrome is a common condition that develops when the median nerve, which runs through a small passage in the wrist called the carpal tunnel, becomes compressed or irritated. This can cause pain, tingling, and numbness in the fingers and hand, making everyday tasks like typing, gripping, or lifting difficult. Early attention and gentle, supportive treatments can help ease discomfort and prevent the condition from getting worse.
+    </p>
+  </div>
+
+  <!-- What Makes It Worse -->
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Repetitive wrist movements like typing or using tools</li>
+    <li>Poor wrist posture for long periods</li>
+    <li>Excessive pressure on the wrist joint</li>
+    <li>Conditions like diabetes, thyroid issues, or pregnancy</li>
+    <li>Ignoring early symptoms and delaying proper care</li>
+  </ul>
+
+  <!-- What Can Help Prevent -->
+  <h2 class="text-2xl font-semibold mb-4">What Can Help Prevent Carpal Tunnel Syndrome</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Maintain a neutral wrist position while working or using tools</li>
+    <li>Take frequent breaks from repetitive hand movements</li>
+    <li>Do gentle wrist stretches and exercises regularly</li>
+    <li>Use an ergonomic setup at your desk and keyboard</li>
+    <li>Avoid putting too much pressure directly on the wrist</li>
+    <li>Treat related conditions like diabetes or arthritis promptly</li>
+  </ul>
+
+  <!-- Conclusion -->
+  <p class="text-lg text-gray-800 leading-relaxed max-w-2xl mx-auto mb-8 text-center">
+    Once you begin our homeopathic treatment for Carpal Tunnel Syndrome, you will gradually feel relief as the pain and numbness begin to reduce and the nerve irritation calms down. Improved blood circulation will help decrease swelling in the wrist, allowing for smoother movement. Over time, you’ll notice better muscle strength and grip, making everyday tasks easier to perform. The tingling sensation and nighttime discomfort will slowly fade, and with continued care, the treatment will support long-term relief and help prevent further nerve damage — all through gentle, natural remedies that are safe and free of harsh side effects.
+  </p>
+
+  <!-- Video Placeholder -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/cts.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+</section>
+
+{% endblock %}

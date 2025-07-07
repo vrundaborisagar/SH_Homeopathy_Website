@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Spinal Cord Injury</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/sc2.jpg') }}" alt="Spinal Cord Anatomy" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    A spinal cord injury (SCI) is damage to any part of the spinal cord or nerves at the end of the spinal canal. This can lead to permanent changes in strength, sensation, and body functions below the site of the injury. It may be caused by trauma such as a fall, car accident, sports injury, or medical conditions like infections or tumors. Early treatment and specialized care are crucial to recovery.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Loss of movement or paralysis in any part of the body</li>
+    <li>Altered sensation, including the ability to feel heat, cold, or touch</li>
+    <li>Loss of bowel or bladder control</li>
+    <li>Spasms or exaggerated reflexes</li>
+    <li>Pain or intense stinging sensation due to nerve damage</li>
+    <li>Difficulty breathing or coughing (for upper spinal injuries)</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/sc1.jpg') }}" alt="Spinal Cord Damage Zones" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Delayed or improper medical care after injury</li>
+    <li>Overexertion without physical therapy guidance</li>
+    <li>Infections due to poor hygiene or bed sores</li>
+    <li>Depression, anxiety, or lack of mental support</li>
+    <li>Inconsistent or inappropriate home care routines</li>
+    <li>Ignoring early signs of nerve dysfunction</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Follow physiotherapy and rehab exercises strictly</li>
+    <li>Use pressure-relieving mattresses to prevent sores</li>
+    <li>Practice bladder and bowel training</li>
+    <li>Monitor skin regularly for wounds or infections</li>
+    <li>Ensure proper nutrition and hydration</li>
+    <li>Get emotional and psychological support</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    Dr. Borisagar’s SH Homeopathy Kit for Spinal Cord Injury supports nerve regeneration, reduces inflammation, and strengthens muscle tone. Our patients report gradual improvements in motor function, pain relief, and better control over bladder and bowel activity. With a personalized recovery plan, we aim to restore dignity and mobility — naturally and holistically.
+  </div>
+
+  <!-- Kit Video -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/sc.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+  <!-- Cure Case Video -->
+  <div class="bg-blue-100 p-4 rounded shadow mb-8">
+    <h3 class="text-xl font-semibold mb-2">Cure Case</h3>
+    <p class="text-lg mb-4">
+     A young Patient who suffered a spinal cord injury that left him unable to walk or stand. After starting SH Homeopathy's specialized kit, he experienced 50% relief in just 2 months. His strength and balance are improving, and he continues to recover well with ongoing treatment — a true sign of homeopathy's healing power.
+    </p>
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/Patient7.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+{% endblock %}

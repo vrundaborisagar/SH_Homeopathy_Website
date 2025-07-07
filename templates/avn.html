@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="bg-white px-6 py-12 max-w-5xl mx-auto">
+  <h1 class="text-4xl font-bold text-center mb-8">AVN (Avascular Necrosis)</h1>
+
+  <!-- Image first -->
+  <div class="mb-6">
+    <img src="{{ url_for('static', filename='images/avn1.jpg') }}" alt="AVN Bone Damage" class="w-full rounded shadow">
+  </div>
+
+  <!-- Paragraph below the image -->
+  <p class="text-lg text-gray-700">
+    Avascular Necrosis (AVN) is a condition where the blood supply to a bone is disrupted or reduced, leading to the gradual death of bone tissue. Without enough blood, the bone weakens, can collapse, and often causes serious pain and stiffness, especially in joints like the hip.
+  </p>
+
+  <!-- Prevention Tips -->
+  <div class="bg-[#f9f9f9] p-6 rounded shadow mb-10">
+    <h2 class="text-2xl font-semibold mb-4">How to Help Prevent It:</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Avoid long-term use of steroids without supervision</li>
+      <li>Limit excessive alcohol consumption</li>
+      <li>Maintain a healthy lifestyle with regular movement</li>
+      <li>Treat joint injuries promptly</li>
+      <li>Keep chronic conditions like diabetes and high cholesterol under control</li>
+    </ul>
+  </div>
+
+  <!-- Stages -->
+  <div class="mb-10">
+    <img src="{{ url_for('static', filename='images/avn2.jpg') }}" alt="AVN Stages" class="w-full rounded shadow mb-6">
+    <h2 class="text-2xl font-semibold mb-4">Stages of AVN:</h2>
+
+    <p class="mb-4"><strong>Stage I</strong><br>
+    • Bone appears mostly normal on X-rays, but blood supply is reduced.<br>
+    • Mild pain or stiffness may be present. Early treatment can slow progression.</p>
+
+    <p class="mb-4"><strong>Stage II</strong><br>
+    • Small cracks appear as blood supply worsens.<br>
+    • Femoral head becomes rougher. Pain and stiffness increase.</p>
+
+    <p class="mb-4"><strong>Stage III</strong><br>
+    • Collapse or flattening of the femoral head begins.<br>
+    • Movement becomes difficult, pain worsens, visible collapse on X-ray.</p>
+
+    <p class="mb-4"><strong>Stage IV</strong><br>
+    • Severe joint damage and arthritis develop.<br>
+    • Constant pain, surgery may be needed for relief.</p>
+  </div>
+
+  <!-- Symptoms -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4">Symptoms:</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Mild to severe joint pain that worsens with activity</li>
+      <li>Stiffness or limited joint movement</li>
+      <li>Difficulty putting weight on the joint (hip, knee, etc.)</li>
+      <li>Pain at rest or during sleep</li>
+      <li>Limping or change in walking style</li>
+    </ul>
+  </div>
+
+  <!-- What Makes It Worse -->
+  <div class="mb-10">
+    <h2 class="text-2xl font-semibold mb-4">What Makes It Worse:</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Ignoring early signs and delaying treatment</li>
+      <li>Continued weight-bearing and high activity</li>
+      <li>Alcohol abuse and smoking</li>
+      <li>Uncontrolled health issues like cholesterol or diabetes</li>
+      <li>Repeat trauma to the joint</li>
+    </ul>
+  </div>
+
+  <!-- Homeopathy Section -->
+  <div class="bg-[#fef9e7] p-6 rounded shadow text-gray-800">
+    <h2 class="text-2xl font-semibold mb-4">With Our Medicines:</h2>
+    <p>
+      Our homeopathy kit is designed to support natural healing and improve blood flow to the affected bone. Over time, the pain, stiffness, and inflammation can decrease, allowing better movement and preventing further damage.
+    </p>
+    <p class="mt-4">
+      Our remedies are safe, gentle, and effective — helping you regain comfort and improve your quality of life without harsh side effects.
+    </p>
+  </div>
+
+  <!-- Optional Kit Video -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/avn.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+  <!-- Cure Case Video -->
+  <div class="bg-blue-100 p-4 rounded shadow mb-8">
+    <h3 class="text-xl font-semibold mb-2">Cure Case</h3>
+    <p class="text-lg mb-4">
+    He was diagnosed with Avascular Necrosis (AVN), and every doctor he visited told him the same thing — that he would need joint replacement surgery. One doctor said he would have to walk with a walker for at least two years. Another warned that if he didn’t undergo surgery, he would need to get holes drilled in his back to relieve the pressure. Faced with fear and uncertainty, he chose SH Homeopathy instead. With our AVN treatment kit, he experienced natural recovery — without surgery, without a walker, and without invasive procedures. His progress is a true example of how safe, gentle care can restore hope and mobility. 
+    </p>
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/Patient11.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+{% endblock %}

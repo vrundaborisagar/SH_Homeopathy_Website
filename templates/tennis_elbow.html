@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Tennis Elbow (Lateral Epicondylitis)</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/te1.jpg') }}" alt="Tennis Elbow Diagram" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Tennis Elbow, or lateral epicondylitis, is a painful condition caused by inflammation of the tendons that join the forearm muscles to the outside of the elbow. It typically develops due to repetitive wrist and arm motions — not just from tennis but also from daily activities like typing, lifting, or gripping. The condition leads to pain, tenderness, and weakness in the elbow and forearm.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Pain or burning on the outer part of the elbow</li>
+    <li>Weak grip strength</li>
+    <li>Elbow pain that worsens with activity</li>
+    <li>Stiffness in the elbow, especially in the morning</li>
+    <li>Tenderness when pressing the outer elbow</li>
+    <li>Pain that radiates from the elbow down to the forearm or wrist</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/te2.jpg') }}" alt="Affected Area Tennis Elbow" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Repetitive arm or wrist movements</li>
+    <li>Lifting objects with a bent elbow</li>
+    <li>Using heavy tools or gripping hard</li>
+    <li>Typing or writing for long periods</li>
+    <li>Not allowing time for healing</li>
+    <li>Poor technique during physical activity</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Use ergonomic tools and maintain proper posture</li>
+    <li>Stretch and warm up before repetitive tasks</li>
+    <li>Use a brace or strap if advised</li>
+    <li>Take regular breaks during arm activity</li>
+    <li>Apply ice after strain or discomfort</li>
+    <li>Avoid lifting heavy objects until fully healed</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    Dr. Borisagar’s SH Homeopathy Kit for Tennis Elbow is specially formulated to reduce tendon inflammation, ease pain, and support natural tissue repair. Patients commonly report reduced stiffness, improved grip, and quicker recovery — all without the risks of steroids or surgery.
+  </div>
+
+  <!-- Video Placeholder -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/tennis.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+</section>
+
+{% endblock %}

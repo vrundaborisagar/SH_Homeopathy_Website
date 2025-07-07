@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Cervical Spondylosis</h1>
+
+  <p class="text-lg mb-6">
+    Cervical spondylosis is a degenerative condition that affects the bones, discs, and joints of the neck (cervical spine). It is commonly caused by age-related wear and tear that results in thinning of the spinal discs and development of bone spurs. This can lead to stiffness, pain, and restricted neck movement. Cervical spondylosis is very common after middle age, and its severity varies from mild discomfort to serious nerve compression.
+  </p>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/c1.jpg') }}" alt="Cervical Spondylosis Diagram" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Persistent pain and stiffness in the neck</li>
+    <li>Pain radiating to shoulders, arms, or hands</li>
+    <li>Numbness or tingling sensation in arms or fingers</li>
+    <li>Muscle weakness in the arms or legs</li>
+    <li>Headaches, especially at the back of the head</li>
+    <li>Difficulty moving the neck or turning the head</li>
+    <li>Feeling dizzy or having balance issues in severe cases</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/c2.jpg') }}" alt="Pain Areas Cervical Spondylosis" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Maintain a good posture while sitting, working, or using a mobile phone</li>
+    <li>Avoid holding your neck in one position for too long</li>
+    <li>Sleep on a comfortable pillow that supports your neck properly</li>
+    <li>Do gentle neck exercises as advised by your doctor</li>
+    <li>Avoid sudden, jerky movements of the neck</li>
+    <li>Limit lifting heavy objects</li>
+    <li>Take regular breaks during long hours at a computer or desk</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    With regular use of our specialized Cervical Spondylosis Homeopathy Kit and supportive therapies, most patients experience significant relief from neck stiffness, pain, and radiating discomfort. Our natural, gentle remedies in the kit help decrease inflammation, improve mobility, and reduce muscle tension. Patients often report feeling lighter in the neck and shoulders, moving with greater ease, and sleeping better at night. Over time, they regain their confidence in everyday activities and enjoy an improved quality of life without harsh side effects.
+  </div>
+
+  <!-- Video Section -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/cs.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+
+</section>
+
+{% endblock %}

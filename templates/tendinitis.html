@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Tendinitis</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/T2.jpg') }}" alt="Tendinitis Illustration" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Tendinitis is the inflammation or irritation of a tendon — the thick fibrous cords that attach muscle to bone. It causes pain and tenderness just outside a joint, most commonly in the shoulders, elbows, wrists, knees, or heels. Overuse, injury, or aging can all lead to this condition. Left untreated, it may result in tendon rupture or chronic joint pain, significantly affecting mobility and daily life.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Localized pain or tenderness near a joint</li>
+    <li>Swelling and stiffness around the tendon area</li>
+    <li>Increased pain during movement or activity</li>
+    <li>Warmth or redness in the affected area</li>
+    <li>Difficulty performing tasks that involve the joint</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/T1.jpg') }}" alt="Affected Areas in Tendinitis" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Repetitive strain or overuse of the affected joint</li>
+    <li>Sudden, heavy exertion or injury</li>
+    <li>Poor posture and improper joint mechanics</li>
+    <li>Ignoring pain and continuing stressful activities</li>
+    <li>Lack of rest and recovery time</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Warm up and stretch properly before physical activity</li>
+    <li>Avoid overuse of affected joints</li>
+    <li>Maintain good posture and ergonomic practices</li>
+    <li>Apply cold packs to reduce inflammation</li>
+    <li>Follow a guided physical therapy routine</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    Dr. Borisagar’s SH Homeopathy Kit for Tendinitis provides natural, non-invasive relief from inflammation and pain. With regular use, patients experience better mobility, reduced swelling, and stronger tendons. Our holistic approach helps prevent recurrence and improves joint function. Most users report noticeable comfort within weeks of beginning the treatment.
+  </div>
+
+ 
+</section>
+
+{% endblock %}

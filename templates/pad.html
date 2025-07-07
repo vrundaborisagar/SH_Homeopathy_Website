@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Peripheral Artery Disease (PAD)</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/pad1.jpg') }}" alt="PAD Diagram" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Peripheral Artery Disease (PAD) is a circulatory condition where narrowed arteries reduce blood flow to the limbs, usually the legs. It commonly results from atherosclerosis — a buildup of fatty deposits in the arteries — which restricts blood circulation. PAD can lead to leg pain during walking, poor wound healing, and in severe cases, tissue damage or ulcers. Early detection and natural care are key to managing symptoms and preventing progression.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Leg pain or cramping during walking (intermittent claudication)</li>
+    <li>Coldness in the lower leg or foot, especially when compared to the other side</li>
+    <li>Sores on the feet or toes that don’t heal properly</li>
+    <li>Weak or no pulse in the legs or feet</li>
+    <li>Shiny skin, hair loss, or slow nail growth on legs or toes</li>
+    <li>Leg numbness or weakness</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/pad2.jpg') }}" alt="Affected Leg Arteries" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Smoking or tobacco use</li>
+    <li>High blood pressure or cholesterol levels</li>
+    <li>Lack of physical activity</li>
+    <li>Uncontrolled diabetes</li>
+    <li>Obesity or poor eating habits</li>
+    <li>Ignoring early signs like leg fatigue or cold feet</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Walk regularly to improve blood circulation</li>
+    <li>Follow a healthy, low-fat diet rich in fiber</li>
+    <li>Quit smoking and avoid secondhand smoke</li>
+    <li>Maintain good foot hygiene and check feet daily</li>
+    <li>Manage diabetes, cholesterol, and blood pressure</li>
+    <li>Avoid sitting or standing still for long periods</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    With Dr. Borisagar's SH Homeopathy Kit for PAD, many patients report improved leg strength, reduced cramping, and better wound healing. Our natural remedies are designed to stimulate blood flow, ease arterial stiffness, and support vascular health without the harsh effects of conventional medication. Patients often resume walking longer distances with less discomfort and gain renewed vitality in their daily life.
+  </div>
+
+  <!-- Video Section -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/PAD.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+  <!-- Cure Case Video -->
+  <div class="bg-blue-100 p-4 rounded shadow mb-8">
+    <h3 class="text-xl font-semibold mb-2">Cure Case</h3>
+    <p class="text-lg mb-4">
+     This patient had been suffering from PAD for over 5 years and could barely walk 500 meters without severe leg pain. After visiting several doctors without relief, he turned to Dr. Borisagar's SH Homeopathy. With just 3-4 months of our personalized kit, he regained his strength and can now comfortably walk 3-4 kilometers without pain. His life has dramatically improved — all without surgery or harsh medications.
+    </p>
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/Patient13.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+{% endblock %}

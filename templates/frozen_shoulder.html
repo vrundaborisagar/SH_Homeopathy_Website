@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Frozen Shoulder</h1>
+
+  <p class="text-lg mb-6">
+    Frozen Shoulder, also called <b>Adhesive Capsulitis</b>, is a condition where the tissues around the shoulder joint become stiff and tight. 
+    This causes pain and a gradual loss of movement, making simple tasks like lifting your arm difficult. 
+    It often develops slowly and can last for months or even years if not treated properly.
+  </p>
+
+  <!-- Image after text -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Frozen Shoulder Image" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">How to prevent it</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Staying active and moving the shoulder regularly.</li>
+    <li>Gentle stretching exercises after any shoulder injury or surgery.</li>
+    <li>Avoiding long periods of immobilization or poor posture.</li>
+    <li>Treating shoulder pain promptly so that stiffness doesn’t set in.</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Shoulder Anatomy" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-2">Stages of Frozen Shoulder</h2>
+  <div class="mb-6">
+    <p class="mb-4"><strong>Stage 1 (Freezing):</strong><br>
+      The pain in the shoulder gradually worsens over time, especially with movement or at night. 
+      The shoulder becomes increasingly stiff and tender, making everyday tasks difficult. 
+      This stage can last for several weeks to months as the shoulder slowly “freezes” with reduced range of motion.
+    </p>
+
+    <p class="mb-4"><strong>Stage 2 (Frozen):</strong><br>
+      Pain may decrease, but stiffness reaches its peak. 
+      The shoulder feels very tight and difficult to move. 
+      Activities like reaching up or behind become very hard. 
+      This stage can last several months.
+    </p>
+
+    <p class="mb-4"><strong>Stage 3 (Thawing):</strong><br>
+      The shoulder gradually regains mobility. 
+      Movement improves, pain lessens, and daily activities become easier. 
+      This recovery stage may take several months.
+    </p>
+  </div>
+
+ <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Gradual onset of shoulder pain and stiffness.</li>
+    <li>Difficulty moving the arm up, to the side, or behind the back.</li>
+    <li>Pain is often worse at night or during rest.</li>
+    <li>Shoulder feels tight with very limited range of motion.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-2">What Makes It Worse</h2>
+  <p class="text-lg mb-6">
+    Keeping the shoulder still for too long can allow stiffness to build up. Ignoring early signs of pain and stiffness leads to more restriction. 
+    Poor posture adds strain on the joint. Sudden movements or lifting heavy objects may increase inflammation. 
+    Stress and lack of gentle exercise can slow down recovery and worsen long-term pain.
+  </p>
+
+  <!-- Video Section -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/fs.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+  <!-- Cure Case Video -->
+  <div class="bg-blue-100 p-4 rounded shadow mb-8">
+    <h3 class="text-xl font-semibold mb-2">Cure Case</h3>
+    <p class="text-lg mb-4">
+      After a shoulder injury from an accident, this patient developed frozen shoulder and was unable to lift her hand. Several doctors recommended surgery, but she sought help from Dr. Borisagar. After consistent use of our SH Homeopathy Kit, she experienced a 90-95% improvement. Now, she can lift her arm, carry out daily tasks, and live pain-free without undergoing an operation.
+     </p>
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/patient14.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+{% endblock %}

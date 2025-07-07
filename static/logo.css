@@ -1,0 +1,15 @@
+/* Styles for the SH Homeopathy logo */
+
+nav img {
+    height: 50px;           /* Controls the height of the logo */
+    width: auto;            /* Keeps the aspect ratio */
+    border-radius: 8px;     /* Slight rounded corners */
+    margin-right: 1rem;     /* Space between the logo and links */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Slight hover zoom effect */
+nav img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}

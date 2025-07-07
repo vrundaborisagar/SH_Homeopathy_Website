@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Sports Injuries</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/sports1.jpg') }}" alt="Sports Injuries Illustration" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Sports injuries are common among athletes and active individuals and can affect muscles, ligaments, joints, and bones. These injuries often result from overuse, improper training techniques, inadequate warm-up, or direct impact during physical activity. They can range from mild sprains to severe fractures and often lead to pain, swelling, and limited mobility. Quick and effective treatment is essential to ensure proper healing and return to activity.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Sudden pain or swelling in muscles or joints</li>
+    <li>Stiffness or limited range of motion</li>
+    <li>Bruising or discoloration at the injury site</li>
+    <li>Weakness or instability during movement</li>
+    <li>Difficulty bearing weight or using the affected limb</li>
+    <li>Popping or snapping sound at the time of injury</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/sports2.jpg') }}" alt="Common Injury Areas" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Continuing physical activity without rest</li>
+    <li>Ignoring early pain or swelling signs</li>
+    <li>Improper rehabilitation after previous injuries</li>
+    <li>Lack of protective gear or poor technique</li>
+    <li>Returning to sports too early</li>
+    <li>Inadequate hydration or nutrition</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Warm up and stretch before physical activity</li>
+    <li>Use proper technique and protective equipment</li>
+    <li>Stay hydrated and maintain a balanced diet</li>
+    <li>Rest between workouts to allow recovery</li>
+    <li>Seek early treatment for any discomfort or strain</li>
+    <li>Follow recommended rehab exercises if injured</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    With regular use of our specialized Homeopathy Kit for Sports Injuries, patients experience faster healing and reduced pain without dependency on painkillers. Our natural remedies help control inflammation, accelerate tissue repair, and strengthen affected areas. Many athletes report quicker recovery, improved flexibility, and renewed confidence in performance.
+  </div>
+
+   <!-- Video Section -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/si.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+
+  <!-- Cure Case Image -->
+<div class="bg-blue-100 p-4 rounded shadow mb-8">
+  <h3 class="text-xl font-semibold mb-2">Cure Case</h3>
+  <p class="text-lg mb-4">
+    Mr. Sitanshu Kotak, coach of the Indian Cricket Team, approached SH Homeopathy for the treatment of osteoarthritis resulting from a long-standing sports injury. After undergoing our specialized Sports Injury Kit protocol, he experienced noticeable relief in joint stiffness, pain, and mobility — without the need for invasive procedures or long-term medication.
+  </p>
+  <img src="{{ url_for('static', filename='images/123.jpg') }}" 
+       alt="Cure Case Image" 
+       class="mx-auto w-full max-w-xl rounded shadow">
+</div>
+
+
+</section>
+
+{% endblock %}

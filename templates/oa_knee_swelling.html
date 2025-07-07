@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="text-center text-3xl font-bold mb-6">O.A. Knee with Swelling</h1>
+
+<!-- Introduction section -->
+<div class="bg-white p-6 rounded shadow mb-8">
+    <img src="{{ url_for('static', filename='images/oa_knee_swelling_1.jpg') }}" alt="O.A. Knee with Swelling Image 1" class="mx-auto mb-4 h-64 w-auto rounded shadow">
+    <p class="text-lg leading-relaxed mb-4">
+        <strong>Osteoarthritis of the knee with swelling</strong> means the protective cartilage in your knee joint is wearing away, leading to inflammation and fluid buildup. This causes the knee to become stiff, puffy, and painful, especially after activity or long periods of rest.
+    </p>
+    <h2 class="text-xl font-bold mb-2">Symptoms</h2>
+    <ul class="list-disc list-inside mb-4">
+        <li>Sharp, sudden pain along with the long-term ache of osteoarthritis</li>
+        <li>Redness, warmth, and tenderness around the knee joint</li>
+        <li>Swelling and stiffness that worsen during gout flare-ups</li>
+        <li>Difficulty bending or straightening the knee</li>
+        <li>Increased pain after walking, standing, or climbing stairs</li>
+        <li>Restricted movement and a feeling of joint instability</li>
+        <li>Episodes of intense pain, especially during the night</li>
+    </ul>
+</div>
+
+<!-- Detailed Info -->
+<div class="bg-white p-6 rounded shadow mb-8">
+    <img src="{{ url_for('static', filename='images/oa_knee_swelling_2.jpg') }}" alt="O.A. Knee with Swelling Image 2" class="mx-auto mb-4 h-64 w-auto rounded shadow">
+    <p class="text-lg leading-relaxed mb-4">
+        <strong>O.A. Knee with Swelling</strong> is a common condition where the wear and tear of the knee joint cartilage leads to inflammation and fluid buildup. This often results in noticeable swelling, stiffness, warmth, and pain around the knee, making everyday activities like walking, standing up, or climbing stairs more difficult. Factors like excess weight and repeated stress on the joint can make the swelling worse and slow down recovery. It is important to manage these symptoms early to prevent further damage and keep the knee as comfortable and mobile as possible.
+    </p>
+    <h2 class="text-xl font-bold mb-2">What Makes It Worse:</h2>
+    <ul class="list-disc list-inside mb-4">
+        <li>Excessive weight putting stress on the joint</li>
+        <li>Prolonged standing or walking</li>
+        <li>Sudden twisting or overuse of the knee</li>
+        <li>Ignoring early signs and not resting properly</li>
+    </ul>
+    <p class="text-lg leading-relaxed mb-4">
+        Our treatment is designed to naturally reduce swelling and pain in the knee, while also improving circulation around the joint. By strengthening the muscles that support the knee and improving mobility, it can help slow further damage to the cartilage. Our gentle, side-effect-free remedies offer long-term joint health and lasting relief. Along with the treatment, simple self-care is very important — this includes resting the knee as much as possible, using cold compresses to reduce swelling, and doing light exercises or physiotherapy as recommended. It also helps to maintain a healthy weight, wear supportive footwear, and avoid high-impact activities that put extra stress on the knee.
+    </p>
+</div>
+
+<!-- Video Section -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/O.A.KNEE_KIT.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+{% endblock %}

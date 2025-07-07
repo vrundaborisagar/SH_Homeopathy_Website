@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Varicose Veins</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/v1.jpg') }}" alt="Varicose Veins Diagram" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Varicose veins are enlarged, swollen, and twisted veins that typically appear on the legs. They are often blue or dark purple and may bulge from under the skin. Caused by faulty valves in the veins that allow blood to pool, varicose veins can lead to aching, heaviness, and discomfort — especially after long hours of standing or sitting. While common, untreated cases may result in complications such as ulcers, clots, or skin changes.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Stages of Vein Disease</h2>
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/vv2.jpg') }}" alt="Stages of Vein Diseases" class="mx-auto w-full max-w-xl rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Vein diseases progress through five stages — from spider veins to venous ulcers. Each stage represents worsening vein health, with increasing discomfort, swelling, and risk of complications. Early signs include minor cosmetic changes, but without timely care, the condition may escalate to painful ulcers. Dr. Borisagar’s SH Homeopathy Kit supports recovery at each stage, targeting root causes, easing symptoms, and helping patients avoid surgery through natural healing and vein strengthening remedies.
+  </p>
+
+  <div class="text-lg text-gray-800 mb-8">
+    <p class="mb-2"><strong>Stage 1 - Spider Veins:</strong> Small, thin veins visible on the surface of the skin.</p>
+    <p class="mb-2"><strong>Stage 2 - Varicose Veins:</strong> Enlarged, twisted veins with discomfort or heaviness.</p>
+    <p class="mb-2"><strong>Stage 3 - Leg Swelling:</strong> Swelling in ankles and lower legs, especially by the end of the day.</p>
+    <p class="mb-2"><strong>Stage 4 - Skin Discoloration:</strong> Darkening and changes in skin texture around the veins.</p>
+    <p class="mb-2"><strong>Stage 5 - Venous Ulcers:</strong> Open sores or ulcers that take time to heal and may get infected.</p>
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Bulging, twisted veins visible under the skin</li>
+    <li>Heaviness, aching, or burning sensation in the legs</li>
+    <li>Swelling of ankles and feet by evening</li>
+    <li>Itching or discoloration around the veins</li>
+    <li>Leg cramps or throbbing at night</li>
+    <li>Skin changes or ulcer formation in severe cases</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Standing or sitting for long periods</li>
+    <li>Lack of physical activity</li>
+    <li>Obesity or excess weight</li>
+    <li>Tight clothing that restricts blood flow</li>
+    <li>High heels worn for long hours</li>
+    <li>Ignoring initial vein bulging and swelling</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Keep legs elevated when resting</li>
+    <li>Wear compression stockings if advised</li>
+    <li>Stay active with regular walking and leg movements</li>
+    <li>Avoid sitting or standing too long in one position</li>
+    <li>Maintain a healthy weight</li>
+    <li>Use loose, comfortable clothing to improve circulation</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    Dr. Borisagar's SH Homeopathy Kit for Varicose Veins has brought visible relief to <strong>98% of our patients</strong>. It helps strengthen vein walls, improves blood flow, and reduces pain, heaviness, and swelling naturally. Patients report feeling lighter, more mobile, and confident to resume daily activities — all without invasive treatments or surgery.
+  </div>
+
+  <!-- Video Section -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/vv.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+  <!-- Cure Case Video -->
+  <div class="bg-blue-100 p-4 rounded shadow mb-8">
+    <h3 class="text-xl font-semibold mb-2">Cure Case</h3>
+    <p class="text-lg mb-4">
+     She was suffering from painful varicose veins along with a varicose ulcer, which caused persistent swelling, discomfort, and difficulty standing or walking for long periods. The ulcer was open and slow to heal, and swelling around the leg made daily life a struggle. After starting SH Homeopathy’s natural treatment kit, she began to see improvement in just a few weeks. The swelling reduced, the ulcer started healing, and she regained her ability to move around comfortably. Now, she is much better — with healed skin, improved circulation, and no side effects. Her journey shows how gentle homeopathy can help even in severe vein-related conditions.
+    </p>
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/Patient4.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+{% endblock %}

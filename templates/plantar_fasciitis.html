@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Plantar Fasciitis</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/pf1.png') }}" alt="Plantar Fasciitis Diagram" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Plantar fasciitis is a common foot condition that causes pain in the heel and bottom of the foot. It occurs when the plantar fascia — the thick band of tissue that runs along the bottom of the foot — becomes inflamed or irritated due to overuse, improper footwear, or biomechanical issues. Pain is typically sharp and worst with the first steps in the morning or after long periods of rest.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Sharp pain in the heel, especially with the first steps in the morning</li>
+    <li>Tenderness on the bottom of the foot near the heel</li>
+    <li>Pain that worsens after prolonged standing or walking</li>
+    <li>Mild swelling or warmth in the heel area</li>
+    <li>Stiffness in the foot that eases with movement</li>
+    <li>Discomfort after long periods of rest or sitting</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/fs2.jpg') }}" alt="Pain Areas Plantar Fasciitis" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Walking barefoot on hard surfaces</li>
+    <li>Wearing unsupportive footwear</li>
+    <li>Standing or walking for long periods</li>
+    <li>Sudden increase in physical activity</li>
+    <li>Tight calf muscles or Achilles tendons</li>
+    <li>Obesity or excess body weight</li>
+    <li>Lack of proper stretching before activity</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Wear cushioned, supportive shoes with proper arch support</li>
+    <li>Stretch the calves and plantar fascia regularly</li>
+    <li>Rest the foot and avoid overuse</li>
+    <li>Use ice packs to reduce inflammation and pain</li>
+    <li>Avoid walking barefoot, especially on hard floors</li>
+    <li>Maintain a healthy weight to reduce foot pressure</li>
+    <li>Use orthotic inserts if recommended by your doctor</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    With regular use of our Plantar Fasciitis Homeopathy Kit, patients often experience substantial relief from heel pain, inflammation, and foot stiffness. Our carefully selected remedies help soothe irritated tissues, promote natural healing, and support long-term recovery. Patients report ease of movement, better posture, and more comfortable walking — all without invasive procedures or side effects.
+  </div>
+
+  <!-- Kit Video -->
+  <div class="mb-6 text-center">
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/kit_video.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+{% endblock %}

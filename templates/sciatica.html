@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Sciatica</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/sciatica1.jpg') }}" alt="Sciatica Nerve Pain" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from the lower back through the hips and buttocks and down each leg. It typically affects only one side of the body. The condition is commonly caused by herniated discs, bone spurs, or spinal narrowing compressing part of the nerve. Sciatica can cause intense discomfort, weakness, or numbness along the nerve path.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Sharp or burning pain in the lower back, buttock, or leg</li>
+    <li>Numbness or tingling sensation in the leg or foot</li>
+    <li>Weakness in the affected leg</li>
+    <li>Pain that worsens while sitting, standing up, or walking</li>
+    <li>Difficulty bending, twisting, or lifting objects</li>
+    <li>Discomfort on one side of the body, often radiating below the knee</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/sciatica2.jpg') }}" alt="Sciatic Nerve Affected Area" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Prolonged sitting or standing</li>
+    <li>Lifting heavy objects without proper posture</li>
+    <li>Sudden twisting of the spine</li>
+    <li>Being overweight or inactive</li>
+    <li>Stress and tension in the lower back muscles</li>
+    <li>Neglecting early signs of back pain</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Use proper posture while sitting or lifting</li>
+    <li>Practice gentle stretching and core-strengthening exercises</li>
+    <li>Avoid prolonged sitting without movement</li>
+    <li>Maintain a healthy weight</li>
+    <li>Use ergonomic chairs and sleep on supportive mattresses</li>
+    <li>Consult your doctor early if pain radiates down the leg</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    Dr. Borisagar’s SH Homeopathy Kit for Sciatica has cure more than <strong>95% of our patients recover without surgery</strong>. The natural remedies in our kit work to reduce nerve inflammation, relieve compression, and restore mobility. Patients often experience rapid improvement in pain, walking comfort, and overall back health. Our non-invasive approach focuses on long-term healing without dependency on painkillers or operations.
+  </div>
+
+  <!-- Optional Kit Video -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/s1.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+  <!-- Cure Case Video -->
+  <div class="bg-blue-100 p-4 rounded shadow mb-8">
+    <h3 class="text-xl font-semibold mb-2">Cure Case</h3>
+    <p class="text-lg mb-4">
+      He had been suffering from severe leg and back pain due to Sciatica for over 5 years. Despite taking treatment for 2 years in Jamnagar and consulting more than four different doctors, every one of them recommended surgery as the only option. But he chose a natural path with SH Homeopathy. After just 4 months of our specialized Sciatica kit, his pain completely vanished. Today, he can stand and work all day without discomfort — surgery was never needed. His recovery is a powerful reminder of how homeopathy can offer true relief, even in the most chronic cases.
+    </p>
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/Patient10.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+{% endblock %}

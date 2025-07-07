@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="text-center text-3xl font-bold mb-6">O.A. Knee with Gout</h1>
+
+<!-- Introduction -->
+<div class="bg-white p-6 rounded shadow mb-8">
+    <img src="{{ url_for('static', filename='images/oa_knee_gout_1.jpg') }}" alt="O.A. Knee with Gout Image 1" class="mx-auto mb-4 h-64 w-auto rounded shadow">
+    <p class="text-lg leading-relaxed mb-4">
+        <strong>O.A. Knee with Gout</strong> is a painful condition where long-term wear and tear of the knee joint is combined with sudden attacks of uric acid crystals. The damaged cartilage from osteoarthritis and excess uric acid cause inflammation, swelling, and stiffness. This leads to difficulty in moving the knee and increased pain, especially during flare-ups.
+    </p>
+    <h2 class="text-xl font-bold mb-2">Symptoms:</h2>
+    <ul class="list-disc list-inside mb-4">
+        <li>Sharp, intense pain in the knee</li>
+        <li>Swelling, warmth, and redness around the joint</li>
+        <li>Stiffness and reduced range of motion</li>
+        <li>Increased discomfort with movement or even at rest</li>
+        <li>Frequent flare-ups that worsen the pain</li>
+    </ul>
+</div>
+
+<!-- Detailed Info -->
+<div class="bg-white p-6 rounded shadow mb-8">
+    <img src="{{ url_for('static', filename='images/oa_knee_gout_2.jpg') }}" alt="O.A. Knee with Gout Image 2" class="mx-auto mb-4 h-64 w-auto rounded shadow">
+    <h2 class="text-xl font-bold mb-2">What Makes It Worse:</h2>
+    <ul class="list-disc list-inside mb-4">
+        <li>Eating foods high in purines (red meat, seafood, alcohol)</li>
+        <li>Excess weight and lack of regular movement</li>
+        <li>Dehydration and insufficient water intake</li>
+        <li>Excessive stress or over-straining the knee joint</li>
+        <li>Ignoring early signs and delaying treatment</li>
+    </ul>
+    <p class="text-lg leading-relaxed mb-4">
+        By using our kit, you can naturally reduce the pain, swelling, and tenderness caused by O.A. Knee with Gout. The gentle, homeopathic remedies help improve joint flexibility and support long-term relief, making it easier to move without discomfort. Our kit also works to control uric acid levels and prevent future flare-ups, while strengthening the surrounding muscles for better knee support. Safe, gentle, and free of harsh side effects, it provides effective, ongoing care that allows you to regain comfort and mobility in your daily life.
+    </p>
+</div>
+
+<!-- Video Section -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/O.A.KNEE_KIT.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Trigeminal Neuralgia (Left & Right)</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/e1.jpg') }}" alt="Trigeminal Neuralgia Diagram" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Trigeminal neuralgia is a chronic pain condition that affects the trigeminal nerve, which carries sensation from your face to your brain. It is characterized by sudden, sharp, electric-shock-like pains on one side of the face — commonly on the left or right — triggered by simple activities like brushing teeth, eating, or even touching the face. The pain can last from a few seconds to a couple of minutes and can come and go in episodes. Over time, episodes may become more frequent and intense, making daily life very difficult for those affected.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Severe, sharp, stabbing, or shooting pain on one side of the face</li>
+    <li>Pain triggered by light touch on the face or mouth</li>
+    <li>Pain around the jaw, lips, cheek, or forehead</li>
+    <li>Sudden pain that comes and goes in bursts</li>
+    <li>Pain episodes lasting a few seconds to a couple of minutes</li>
+    <li>Pain worsening while talking, chewing, or brushing teeth</li>
+    <li>In some cases, mild, continuous aching between episodes</li>
+  </ul>
+
+  <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/e2.jpg') }}" alt="Pain Areas Trigeminal Neuralgia" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Sudden facial touch or breeze on the face</li>
+    <li>Chewing or talking for long periods</li>
+    <li>Brushing or shaving the face roughly</li>
+    <li>Cold or very windy weather</li>
+    <li>Stress and mental strain</li>
+    <li>Poor oral hygiene or infections in the mouth or teeth</li>
+    <li>Ignoring early signs and delaying treatment</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Avoid very cold or hot food and drinks that can trigger pain</li>
+    <li>Cover your face properly in cold or windy weather</li>
+    <li>Practice gentle oral hygiene to prevent triggering pain</li>
+    <li>Avoid sudden face movements or extreme facial expressions</li>
+    <li>Keep stress and anxiety under control with relaxation techniques</li>
+    <li>Avoid highly processed or spicy foods that can irritate nerves</li>
+    <li>Get enough rest and follow a healthy lifestyle</li>
+  </ul>
+
+  <div class="bg-green-100 p-4 rounded shadow mb-8">
+    With regular use of our Trigeminal Neuralgia Kit (Left & Right), patients often experience a remarkable reduction in painful episodes and their intensity. Our natural homeopathic remedies work on calming nerve sensitivity, reducing inflammation around the trigeminal nerve, and providing long-term relief. Many patients feel more comfortable performing daily activities like eating, talking, and brushing their teeth without fear of pain. Over time, most patients report better sleep, improved mood, and a return to their normal routines as the pain episodes reduce or disappear with continuous use of the kit.
+  </div>
+
+  <!-- Kit Video -->
+  <div class="mb-6 text-center">
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/kit_video.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</section>
+
+{% endblock %}

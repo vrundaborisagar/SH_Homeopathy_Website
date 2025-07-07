@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center mb-8 text-2xl font-bold">Our Treatments</h1>
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+  <!-- O.A. Knee (Osteoarthritis) Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/O.A.KNEE.JPG') }}" alt="O.A. Knee Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">O.A. Knee Kit</h3>
+    <p class="text-sm mt-2">It is a condition where the cartilage in the knee joint wears down, causing pain, swelling, and stiffness.</p>
+    <a href="/treatments/oa_knee" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- O.A. Knee with Swelling Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/oa_knee_swelling.jpg') }}" alt="O.A. Knee with Swelling Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">O.A. Knee with Swelling Kit</h3>
+    <p class="text-sm mt-2">A degenerative joint condition causing knee pain, stiffness, and visible swelling due to inflammation and cartilage wear.</p>
+    <a href="/treatments/oa_knee_swelling" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- O.A. Knee with Gout Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/oa_knee_gout_kit.jpg') }}" alt="O.A. Knee with Gout Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">O.A. Knee with Gout Kit</h3>
+    <p class="text-sm mt-2">A condition where joint degeneration combines with uric acid crystal buildup, causing severe knee pain, stiffness, and inflammation..</p>
+    <a href="/treatments/oa_knee_gout" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Carpal Tunnel Syndrome Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/carpal_tunnel_kit.jpg') }}" alt="Carpal Tunnel Syndrome Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Carpal Tunnel Syndrome Kit</h3>
+    <p class="text-sm mt-2">A nerve compression in the wrist leading to hand numbness, tingling, and weakness.</p>
+    <a href="/treatments/carpal_tunnel" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- AVN (Avascular Necrosis) Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/avn_kit.jpg') }}" alt="AVN Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Avascular Necrosis (AVN) Kit</h3>
+    <p class="text-sm mt-2">AVN occurs when blood supply to a bone is reduced or cut off, leading to bone tissue death. It often affects the hip and causes joint pain and stiffness.</p>
+    <a href="/treatments/avn" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Frozen Shoulder Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Frozen Shoulder Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Frozen Shoulder Kit</h3>
+    <p class="text-sm mt-2">It is a condition causing stiffness and pain in the shoulder joint, limiting its movement.</p>
+    <a href="/treatments/frozen_shoulder" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Cervico Brachial Neuralgia Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/cervico_brachial_neuralgia_kit.jpg') }}" alt="Cervico Brachial Neuralgia Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Cervico-Brachial Neuralgia Kit</h3>
+    <p class="text-sm mt-2">It is nerve pain that radiates from the neck into the shoulder and arm, often due to nerve compression or irritation.</p>
+    <a href="/treatments/cervico_brachial_neuralgia" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Backache Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="Backache Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Backache Kit</h3>
+    <p class="text-sm mt-2">pain or discomfort in the lower, middle, or upper back, often caused by muscle strain, poor posture, or spine-related issues.</p>
+    <a href="/treatments/backache" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Cervical Spondylosis Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Cervical Spondylosis Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Cervical Spondylosis Kit</h3>
+    <p class="text-sm mt-2">Age-related wear and tear of neck bones and discs causing neck pain and stiffness.</p>
+    <a href="/treatments/cervical_spondylosis" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Trigeminal Neuralgia Kit (Left & Right) -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/trigeminal_neuralgia_kit.jpg') }}" alt="Trigeminal Neuralgia Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Trigeminal Neuralgia Kit (Left & Right)</h3>
+    <p class="text-sm mt-2">a chronic pain condition that causes sudden, severe, electric shock-like pain in the face due to irritation of the trigeminal nerve.</p>
+    <a href="/treatments/trigeminal_neuralgia" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Plantar Fasciitis Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/plantar_fasciitis_kit.jpg') }}" alt="Plantar Fasciitis Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Plantar Fasciitis Kit</h3>
+    <p class="text-sm mt-2">Plantar Fasciitis is heel pain caused by inflammation of the plantar fascia, the thick band of tissue connecting the heel to the toes.</p>
+    <a href="/treatments/plantar_fasciitis" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Sports Injuries Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/sports_injuries_kit.jpg') }}" alt="Sports Injuries Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Sports Injuries Kit</h3>
+    <p class="text-sm mt-2">Sports Injuries are physical injuries that occur during exercise or sports activities, commonly affecting muscles, ligaments, tendons, or bones.</p>
+    <a href="/treatments/sports_injuries" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Peripheral Artery Disease (PAD) Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/pad_kit.jpg') }}" alt="PAD Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Peripheral Artery Disease (PAD) Kit</h3>
+    <p class="text-sm mt-2">A condition where narrowed arteries reduce blood flow to the limbs, causing leg pain, cramps, or numbness, especially while walking.</p>
+    <a href="/treatments/pad" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Tennis Elbow Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Tennis Elbow Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Tennis Elbow Kit</h3>
+    <p class="text-sm mt-2">Inflammation of elbow tendons from overuse, causing pain during arm movement.</p>
+    <a href="/treatments/tennis_elbow" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- Sciatica Kit -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/sciatica_kit.jpg') }}" alt="Sciatica Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Sciatica Kit</h3>
+    <p class="text-sm mt-2">It is used to manage sciatica-related ailments. It contains colocynthis, which relieves muscle contraction and neuralgic pains and cramps.</p>
+    <a href="/treatments/sciatica" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+  
+  <!-- SPINAL CORD INJURY KIT -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/spinal_cord_injury_kit.jpg') }}" alt="Spinal Cord Injury Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Spinal Cord Injury Kit</h3>
+    <p class="text-sm mt-2">It is damage to the spinal cord that can cause loss of movement, sensation, or function below the site of injury.</p>
+    <a href="/treatments/spinal_cord_injury" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- VERICOSE VEIN KIT -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/vericose_vein_kit.jpg') }}" alt="Vericose Vein Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Vericose Vein kit</h3>
+    <p class="text-sm mt-2">It is used to manage symptoms related to varicose veins and venous insufficiency. It contains key remedies that help relieve heaviness, pain, and swelling in the legs.</p>
+    <a href="/treatments/vericose_vein" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+  <!-- TENDINITIS KIT  -->
+  <div class="bg-white p-4 rounded shadow text-center">
+    <img src="{{ url_for('static', filename='images/tendinitis_kit.jpg') }}" alt="Tendinitis Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Tendinitis Kit</h3>
+    <p class="text-sm mt-2">t is inflammation or irritation of a tendon, causing pain and tenderness near a joint, often due to overuse or injury.</p>
+    <a href="/treatments/tendinitis" class="inline-block mt-4 text-blue-600">Learn More →</a>
+  </div>
+
+</div>
+{% endblock %}

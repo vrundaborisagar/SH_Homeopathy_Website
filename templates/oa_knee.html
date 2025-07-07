@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <h1 class="text-center text-3xl font-bold mb-6">O.A. Knee (Osteoarthritis of the Knee)</h1>
+
+<!-- Introduction section -->
+<div class="bg-white p-6 rounded shadow mb-8">
+    <img src="{{ url_for('static', filename='images/oa_knee_1.jpg') }}" alt="O.A. Knee Image 1" class="mx-auto mb-4 h-64 w-auto rounded shadow">
+    <p class="text-lg leading-relaxed mb-4">
+        <strong>O.A. Knee (Osteoarthritis of the Knee)</strong> is a wear-and-tear condition of the knee joint. It occurs when the cartilage in the knee breaks down over time, which can cause pain, stiffness, and swelling. This is most common in older adults and people who have had past knee injuries, making everyday activities like walking, climbing stairs, or even standing up feel difficult.
+    </p>
+    <h2 class="text-xl font-bold mb-2">Symptoms</h2>
+    <ul class="list-disc list-inside mb-4">
+        <li>Knee pain that worsens with activity</li>
+        <li>Stiffness after rest or sleeping</li>
+        <li>Swelling and tenderness around the knee</li>
+        <li>Grinding or clicking sensation during movement</li>
+        <li>Limited range of motion</li>
+    </ul>
+</div>
+
+<!-- Detailed Information -->
+<div class="bg-white p-6 rounded shadow mb-8">
+    <p class="text-lg leading-relaxed mb-4">
+        O.A. Knee is a progressive, wear-and-tear condition where the protective cartilage that cushions the knee joint gradually breaks down. This can lead to increased friction between the bones, resulting in pain, stiffness, swelling, and grinding sensations in the knee. The joint may feel unstable or give way, especially after inactivity or excessive activity.
+    </p>
+    <p class="text-lg leading-relaxed mb-4">
+        Factors like aging, obesity, repetitive stress on the knees, joint injuries, and family history can all increase the risk of osteoarthritis. 
+        Although O.A. Knee cannot be completely reversed, the right combination of personalized homeopathy treatment, gentle exercises, proper joint care, and weight management can greatly help reduce pain, control swelling, improve flexibility, and slow further joint damage — allowing you to remain active and independent for as long as possible.
+    </p>
+</div>
+
+<!-- Stages section -->
+<div class="bg-white p-6 rounded shadow mb-8">
+    <img src="{{ url_for('static', filename='images/oa_knee_2.jpg') }}" alt="O.A. Knee Stages" class="mx-auto mb-4 h-64 w-auto rounded shadow">
+    <h2 class="text-xl font-bold mb-4">Stages of O.A. Knee</h2>
+
+    <h3 class="font-bold mb-2">Stage I — Minor:</h3>
+    <p class="mb-4">Very little wear on the knee joint. Tiny cracks may appear, but most people have minimal pain or stiffness.</p>
+
+    <h3 class="font-bold mb-2">Stage II — Mild:</h3>
+    <p class="mb-4">Cartilage begins to wear. Small bone spurs may form. Patients feel occasional discomfort and stiffness, especially after inactivity.</p>
+
+    <h3 class="font-bold mb-2">Stage III — Moderate:</h3>
+    <p class="mb-4">More obvious cartilage damage and narrowed joint space. Pain becomes regular during movement, with swelling and stiffness.</p>
+
+    <h3 class="font-bold mb-2">Stage IV — Severe:</h3>
+    <p class="mb-4">Cartilage is mostly gone. Bones grind against each other. Severe pain and stiffness make everyday activities difficult. Aggressive interventions like injections or surgery may be needed.</p>
+</div>
+
+<!-- Video Section -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/O.A.KNEE_KIT.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+<!-- Cure Case Video -->
+  <div class="bg-blue-100 p-4 rounded shadow mb-8">
+    <h3 class="text-xl font-semibold mb-2">Cure Case</h3>
+    <p class="text-lg mb-4">
+   A patient suffering from severe osteoarthritis in her knees was advised to undergo knee replacement surgery. She had tried various treatments from other doctors but saw no significant improvement. Eventually, she began Dr. Borisagar’s SH Homeopathy Kit. After 4–6 months of consistent treatment, she experienced remarkable relief — now she is able to walk comfortably, sit on the ground, and even run. Her mobility has returned without the need for surgery.
+    </p>
+    <video controls class="mx-auto w-full max-w-xl rounded shadow">
+      <source src="{{ url_for('static', filename='videos/Patient15.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+{% endblock %}

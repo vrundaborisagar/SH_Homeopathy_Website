@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- ✅ Hero Section -->
+<section class="bg-[#faf7f0] flex flex-col items-center justify-center text-center p-8">
+  <img src="/static/images/your-hero-image.jpg" alt="Hero" class="w-full max-w-4xl mb-8 rounded shadow mx-auto">
+  <h1 class="text-4xl font-bold mb-2">Personalized Homeopathy For Natural Wellness</h1>
+  <p class="text-lg text-gray-700 mb-6 max-w-xl mx-auto">Start your healing journey with a single visit.</p>
+  <a href="/appointment" class="bg-yellow-700 text-white px-6 py-3 rounded shadow hover:bg-yellow-800">Book Appointment</a>
+</section>
+
+<!-- ✅ About Doctor Section -->
+<section class="bg-white p-8 max-w-4xl mx-auto text-center mt-8">
+  <h1 class="text-4xl font-bold mb-6">Dr. Keerti Borisagar</h1>
+  
+  <div class="mx-auto mb-6 w-64 h-64 rounded-full overflow-hidden bg-white">
+    <img src="{{ url_for('static', filename='images/dr.kirtiborisagar.jpg') }}" 
+         alt="Dr. Keertibhai Borisagar" 
+         class="w-full h-full object-contain">
+  </div>
+
+  <p class="text-lg text-gray-800 mb-6">
+    Dr. Keerti Borisagar is a leading <b>Homeopathy Physician.</b> He is working in Khambha, District Amreli, Gujarat, and is well-recognized for his amazing work in the field of homeopathic medicine.
+  </p>
+  <p class="text-lg text-gray-800 mb-6">
+    He has studied BHMS from Rajkot Homeopathy Medical College. Presently, he is the Director of <b>Shreeya Spine and Pain Management Center.</b> With over 20 years of experience, he has successfully treated more than <b>25,000 patients.</b> His remedies and insights have helped save thousands of lives from surgery with the help of homeopathic medicine.
+  </p>
+  <p class="text-lg text-gray-800 mb-6">
+    It's a proud feeling to have such talent and knowledge in our field.
+  </p>
+</section>
+
+<!-- ✅ Specialization Section -->
+<section class="p-8 bg-[#f7f5ee] text-center">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4">We Specialize in Homeopathy</h2>
+    <p class="text-lg mb-6 text-gray-800 max-w-2xl mx-auto">
+      Our expert homeopathic care focuses on long-lasting relief without side effects. We specialize in treating chronic conditions like sciatica, back pain, osteoarthritis (knee), frozen shoulder, cervical spondylosis, carpal tunnel syndrome, AVN, tennis elbow, PAD, and more — naturally and effectively.
+    </p>
+
+    <!-- Grid of Treatments -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+
+      <!-- Cervical Spondylosis -->
+      <a href="/treatments/cervical-spondylosis" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/3.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="Cervical Spondylosis">
+        <h3 class="font-bold mb-2">Cervical SpondylosisKit</h3>
+        <p class="text-sm text-gray-600">Age-related wear and tear of neck bones and discs.</p>
+      </a>
+
+      <!-- Carpal Tunnel Syndrome -->
+      <a href="/treatments/carpal_tunnel" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/carpal_tunnel_kit.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="Carpal Tunnel Syndrome">
+        <h3 class="font-bold mb-2">Carpal Tunnel Syndrome Kit</h3>
+        <p class="text-sm text-gray-600">A nerve compression in the wrist leading to hand numbness, tingling, and weakness.</p>
+      </a>
+
+      <!-- Sciatica -->
+      <a href="/treatments/sciatica" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/sciatica_kit.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="Sciatica">
+        <h3 class="font-bold mb-2">Sciatica Kit</h3>
+        <p class="text-sm text-gray-600">Pain along the sciatic nerve that radiates down the leg, often caused by a herniated disc.</p>
+      </a>
+
+      <!-- PAD -->
+      <a href="/treatments/pad" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/pad_kit.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="PAD">
+        <h3 class="font-bold mb-2">Peripheral Artery Disease (PAD) Kit</h3>
+        <p class="text-sm text-gray-600">Narrowed arteries reduce blood flow to the limbs, causing leg pain and numbness.</p>
+      </a>
+
+      <!-- AVN -->
+      <a href="/treatments/avn" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/avn_kit.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="AVN">
+        <h3 class="font-bold mb-2">AVN (Avascular Necrosis) Kit</h3>
+        <p class="text-sm text-gray-600">Bone death due to lack of blood supply, often affecting the hip joint.</p>
+      </a>
+
+      <!-- O.A. Knee -->
+      <a href="/treatments/oa_knee" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/O.A.KNEE.JPG" class="mx-auto mb-2 w-32 h-32 object-contain" alt="O.A. Knee">
+        <h3 class="font-bold mb-2">O.A. Knee Kit</h3>
+        <p class="text-sm text-gray-600">Degenerative joint disease causing knee pain and stiffness.</p>
+      </a>
+
+      <!-- Carpal Tunnel Syndrome -->
+      <a href="/treatments/carpal_tunnel" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/carpal_tunnel_kit.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="Carpal Tunnel Syndrome">
+        <h3 class="font-bold mb-2">Carpal Tunnel Syndrome Kit</h3>
+        <p class="text-sm text-gray-600">A nerve compression in the wrist leading to hand numbness, tingling, and weakness.</p>
+      </a>
+
+      <!-- Frozen Shoulder Kit -->
+      <a href="/treatments/frozen_shoulder" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/1.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="Frozen Shoulder">
+        <h3 class="font-bold mb-2">Frozen Shoulder Kit</h3>
+        <p class="text-sm text-gray-600">It is a condition causing stiffness and pain in the shoulder joint, limiting its movement.</p>
+      </a>
+
+      <!-- Cervico-Brachial Neuralgia Kit -->
+      <a href="/treatments/cervico_brachial_neuralgia Kit" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/cervico_brachial_neuralgia_kit.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="Cervico-Brachial Neuralgia">
+        <h3 class="font-bold mb-2">Cervico-Brachial Neuralgia Kit</h3>
+        <p class="text-sm text-gray-600">It is nerve pain that radiates from the neck into the shoulder and arm, often due to nerve compression or irritation.</p>
+      </a>
+
+      <!-- Backache Kit -->
+      <a href="/treatments/backache" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/4.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="Backache">
+        <h3 class="font-bold mb-2">Backache Kit</h3>
+        <p class="text-sm text-gray-600">pain or discomfort in the lower, middle, or upper back, often caused by muscle strain, poor posture, or spine-related issues.</p>
+      </a>
+
+      <!-- Trigeminal Neuralgia Kit (Left & Right) -->
+      <a href="/treatments/trigeminal_neuralgia" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="/static/images/trigeminal_neuralgia_kit.jpg" class="mx-auto mb-2 w-32 h-32 object-contain" alt="Trigeminal Neuralgia">
+        <h3 class="font-bold mb-2">Trigeminal Neuralgia Kit (Left & Right)</h3>
+        <p class="text-sm text-gray-600">a chronic pain condition that causes sudden, severe, electric shock-like pain in the face due to irritation of the trigeminal nerve.</p>
+      </a>
+
+      <!-- Plantar Fasciitis Kit -->
+      <a href="/treatments/plantar_fasciitis" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+        <img src="{{ url_for('static', filename='images/plantar_fasciitis_kit.jpg') }}" alt="Plantar Fasciitis Kit" class="mx-auto mb-4 h-40 w-auto">
+        <h3 class="font-bold mb-2">Plantar Fasciitis</h3>
+        <p class="text-sm text-gray-600">Plantar Fasciitis is heel pain caused by inflammation of the plantar fascia, the thick band of tissue connecting the heel to the toes.</p>
+      </a>
+
+      <!-- Sports Injuries Kit -->
+      <a href="/treatments/sports_injuries" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+    <img src="{{ url_for('static', filename='images/sports_injuries_kit.jpg') }}" alt="Sports Injuries Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Sports Injuries Kit</h3>
+    <p class="text-sm mt-2">Sports Injuries are physical injuries that occur during exercise or sports activities, commonly affecting muscles, ligaments, tendons, or bones.</p>
+      </a>
+
+      <!-- Tennis Elbow Kit -->
+ <a href="/treatments/tennis_elbow" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Tennis Elbow Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Tennis Elbow Kit</h3>
+    <p class="text-sm mt-2">Inflammation of elbow tendons from overuse, causing pain during arm movement.</p>
+ </a>
+
+      <!-- SPINAL CORD INJURY KIT -->
+  <a href="/treatments/spinal_cord_injury"class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+    <img src="{{ url_for('static', filename='images/spinal_cord_injury_kit.jpg') }}" alt="Spinal Cord Injury Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Spinal Cord Injury Kit</h3>
+    <p class="text-sm mt-2">It is damage to the spinal cord that can cause loss of movement, sensation, or function below the site of injury.</p>
+</a>
+
+  <!-- VERICOSE VEIN KIT -->
+ <a href="/treatments/vericose_vein"class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+    <img src="{{ url_for('static', filename='images/vericose_vein_kit.jpg') }}" alt="Vericose Vein Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Vericose Vein kit</h3>
+    <p class="text-sm mt-2">It is used to manage symptoms related to varicose veins and venous insufficiency. It contains key remedies that help relieve heaviness, pain, and swelling in the legs.</p>
+</a>
+
+  <!-- TENDINITIS KIT  -->
+   <a href="/treatments/tendinitis" class="bg-white p-4 rounded shadow text-center hover:shadow-lg transition">
+    <img src="{{ url_for('static', filename='images/tendinitis_kit.jpg') }}" alt="Tendinitis Kit" class="mx-auto mb-4 h-40 w-auto">
+    <h3 class="font-bold text-xl">Tendinitis Kit</h3>
+    <p class="text-sm mt-2">t is inflammation or irritation of a tendon, causing pain and tenderness near a joint, often due to overuse or injury.</p>
+</a>
+      
+    </div>
+  </div>
+</section>
+
+{% endblock %}

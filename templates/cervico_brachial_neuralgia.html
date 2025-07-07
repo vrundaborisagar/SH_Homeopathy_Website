@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="max-w-4xl mx-auto p-6 text-gray-800">
+
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">Cervico-Brachial Neuralgia</h1>
+
+  <!-- Image 1 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/image10.jpg') }}" alt="Cervico-Brachial Neuralgia Info" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <p class="text-lg mb-6">
+    Cervico-Brachial Neuralgia is caused by irritation or compression of nerves in the neck, radiating pain into the arms. It can be triggered by disc issues, poor posture, trauma, or repetitive strain.
+  </p>
+
+  <h2 class="text-2xl font-semibold mb-4">Symptoms</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Sharp/aching pain from neck to arm and fingers</li>
+    <li>Tingling or pins-and-needles in the hand</li>
+    <li>Muscle weakness in the arm or hand</li>
+    <li>Numbness along the nerve path</li>
+    <li>Burning sensations and stiffness</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">What Makes It Worse</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Poor posture or prolonged neck bending</li>
+    <li>Heavy lifting or jerky movements</li>
+    <li>Cold drafts and lack of rest</li>
+  </ul>
+
+   <!-- Image 2 -->
+  <div class="mb-6 text-center">
+    <img src="{{ url_for('static', filename='images/image11.jpg') }}" alt="Cervico-Brachial Pain Pattern" class="mx-auto w-full max-w-md rounded shadow">
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">Precautions</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li>Maintain proper posture while sitting/sleeping</li>
+    <li>Avoid lifting heavy objects</li>
+    <li>Practice gentle neck stretches</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Key Ingredients in Our Kit</h2>
+  <ul class="list-disc list-inside text-lg text-gray-800 space-y-2 mb-8">
+    <li><strong>Colocynthis</strong> – for intense, cramp-like nerve pain</li>
+    <li><strong>Hypericum</strong> – supports nerve repair and relieves shooting pains</li>
+    <li><strong>Rhus tox</strong> – relieves stiffness and pain worse at rest</li>
+    <li><strong>Kalmia</strong> – for radiating arm pain</li>
+    <li><strong>Gelsemium</strong> – for weakness and heaviness in arms</li>
+    <li><strong>Arsenicum</strong> – for burning pain worse at night</li>
+  </ul>
+
+  <div class="bg-blue-100 p-4 rounded shadow mb-8">
+    <strong>Dr. Borisagar's SH Homeopathy Kit</strong> has helped many find lasting relief. Patients experience reduced pain, better mobility, restful sleep, and improved quality of life with our natural, safe, and gentle remedies.
+  </div>
+
+  <h2 class="text-2xl font-semibold mb-4">Pain Pattern</h2>
+  <p class="text-lg mb-6">
+    This diagram shows the typical pain pathways — red dotted areas indicate pain, tingling, or numbness spreading from the neck into the shoulder, arm, hand, or face. Recognizing these helps ensure faster relief.
+  </p>
+ <!-- Video Placeholder -->
+<div class="text-center">
+  <div style="position: relative; width: 100%; max-width: 640px; aspect-ratio: 4 / 3; background: black; margin: auto;">
+    <video 
+      src="{{ url_for('static', filename='videos/CBN.mp4') }}" 
+      style="width: 100%; height: 100%; object-fit: contain;" 
+      class="rounded shadow" 
+      controls>
+    </video>
+  </div>
+</div>
+
+</section>
+
+{% endblock %}
