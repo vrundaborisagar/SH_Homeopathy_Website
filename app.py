@@ -22,7 +22,7 @@ mail = Mail(app)
 
 # ----------------------- Routes -----------------------
 
-@app.route('/')
+@app.route('/', methods=['GET', 'HEAD'])
 def home():
     return render_template('index.html')
 
@@ -63,6 +63,7 @@ def appointment():
 
         # Email to clinic
         clinic_body = f"""New appointment booking:
+
 Name: {name}
 Age: {age}
 Complaint: {complain}
@@ -83,8 +84,7 @@ Thank you for booking your appointment with SH Homeopathy.
 
 We will let you know your time of online visit soon.
 
-
-Warm regards,  
+Warm regards,
 SH Homeopathy Team"""
 
         send_email(email, 'Appointment Confirmation', patient_body)
@@ -114,16 +114,6 @@ def order():
         payment_method = request.form.get('payment_method')
         transaction_id = request.form.get('transaction_id') or 'Not Provided'
 
-        # File upload (Transaction Screenshot)
-        ss_file = request.files.get('transaction_ss')
-        filename = None
-        if ss_file and ss_file.filename:
-            filename = secure_filename(ss_file.filename)
-            ss_path = os.path.join('static/uploads', filename)
-            ss_file.save(ss_path)
-        else:
-            ss_path = "Not uploaded"
-
         # Order text
         order_details = f"""New Order Received!
 ========================
@@ -135,7 +125,6 @@ Ordered Kit: {kit}
 Total Price: ₹{price}
 Payment Method: {payment_method}
 Transaction ID: {transaction_id}
-Screenshot: {ss_path}
 ========================"""
 
         # Save locally
@@ -164,7 +153,7 @@ We will process and dispatch your kit soon.
 
 If you have any queries, contact us at +91-94274 29035.
 
-Warm regards,  
+Warm regards,
 SH Homeopathy Team"""
 
         send_email(email, 'Order Confirmation - SH Homeopathy', confirmation_msg)
@@ -192,6 +181,4 @@ def send_email(recipient, subject, body):
 if __name__ == '__main__':
     if not os.path.exists('static/uploads'):
         os.makedirs('static/uploads')
-    app.run(debug=True)
     app.run(host='0.0.0.0', port=10000)
-
