@@ -6,13 +6,13 @@ import os
 from dotenv import load_dotenv
 from werkzeug.utils import secure_filename
 
-# Load environment variables
+# Load environment variables from .env file
 load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-# ----------------------- Flask-Mail Config -----------------------
+# ----------------------- Flask-Mail Configuration -----------------------
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
@@ -179,5 +179,10 @@ def send_email(recipient, subject, body):
 # ----------------------- Run App -----------------------
 
 if __name__ == '__main__':
+    # Ensure uploads directory exists
     if not os.path.exists('static/uploads'):
         os.makedirs('static/uploads')
+
+    # Run the app on Render's dynamic port
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
