@@ -85,3 +85,71 @@ form input, form textarea {
 .contact-info strong {
     color: #2c1b5c;
 }
+
+/* Mobile menu toggle button */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Nav links container */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Show in mobile as hidden initially */
+.nav-links.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e1b963;
+    padding: 1rem 0;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem 1rem;
+        margin: 5px 0;
+    }
+
+    .brand img {
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .brand span {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}
